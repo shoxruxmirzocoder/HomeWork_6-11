@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+{% block title %}
+    qoshish
+{% endblock %}
+{% block content %}
+    <form action="" method="post">
+<fieldset >
+    {% csrf_token %}
+    <label for="name">Reja nomi :</label>
+    <input type="text" class="form-control" name="name"><br>
+<label for="mavzular">mavzular:</label>
+<textarea class="form-control" rows="5" name="mavzular"></textarea>
+    </fieldset>
+    <input type="submit" value="add themes">
+</form>
+{% endblock %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block title %}
+    {% load static %}
+    Update
+{% endblock %}
+{% block content %}
+    <div class="yabgilash">
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <label for="name">Nomi:</label>
+            <input type="text" name="name" class="form-control" required><br>
+
+            <label for="mavzular">Mavzular:</label>
+            <textarea class="form-control" rows="5" name="mavzular" required></textarea>
+
+        </fieldset>
+        <input type="submit" value="Update">
+    </form>
+    </div>
+{% endblock %}

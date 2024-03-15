@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+{% block title %}
+mazular
+{% endblock %}
+{% block content %}
+
+<table class="table-bordered" WIDTH="700PX">
+
+       <tr>
+
+       <th>N1</th>
+        <th>Nomi</th>
+           <th>Mavzular</th>
+           </tr>
+           {% for themes in themes %}
+
+            <tr>
+            <td>{{ themes.id }}</td>
+            <td>{{ themes.name }}</td>
+            <td>{{ themes.mavzular }}</td>
+
+    </tr>
+{% endfor %}
+               </table>
+
+{% endblock %}

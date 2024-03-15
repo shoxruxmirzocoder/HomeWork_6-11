@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block title %}
+    ochirish
+{% endblock %}
+{% block content %}
+
+<form action="" method="post">
+        {% csrf_token %}
+        <spam>ochirmoqchi bolasangiz boshing </spam>
+        <input type="submit" value="bosing">
+    </form>
+{% endblock %}
